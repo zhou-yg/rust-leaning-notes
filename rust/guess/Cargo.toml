@@ -1,0 +1,11 @@
+[package]
+name = "guess-game"
+version = "0.0.0"
+edition = "2018"
+
+[[bin]]
+name = "guess-game"
+path = "guess-game.rs"
+
+[dependencies]
+rand = "0.8.4"
