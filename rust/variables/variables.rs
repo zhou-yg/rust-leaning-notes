@@ -51,6 +51,8 @@ fn main() {
   ifelse();
 
   mkLoop();
+
+  exp();
 }
 
 
@@ -82,4 +84,10 @@ fn mkLoop() {
   };
   println!("bb is {}", bb);
 
+}
+
+fn exp() {
+  let a = 5;
+  let b = { let a = a + 1; a + 5 };
+  println!("b is {}", b);
 }

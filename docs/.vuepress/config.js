@@ -9,6 +9,7 @@ module.exports = {
       '/',
       '/quick-start',
       '/hello-world',
+      '/basic-info'
     ]
   },
 }
