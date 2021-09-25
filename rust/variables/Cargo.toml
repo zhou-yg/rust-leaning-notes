@@ -1,0 +1,11 @@
+[package]
+name = "variables"
+version = "0.0.0"
+edition = "2018"
+
+[[bin]]
+name = "variables"
+path = "variables.rs"
+
+[dependencies]
+rand = "0.8.4"

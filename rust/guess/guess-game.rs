@@ -8,11 +8,9 @@ fn main() {
 
   stdin().read_line(&mut num);
 
-  println!("the input {}", num);
-
   let secret = rand::thread_rng().gen_range(1..10);
 
-  println!("the input {}, s = {}", num, secret);
+  println!("the input {}, anwser = {}", num, secret);
 
   let guess: u32 = match num.trim().parse() {
     Ok(num) => num,
