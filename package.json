@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/zhou-yg/rust-leaning-notes#readme",
   "dependencies": {
+    "@tensorflow/tfjs-node": "^3.9.0",
     "vuepress": "^1.8.2"
   }
 }
