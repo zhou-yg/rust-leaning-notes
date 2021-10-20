@@ -1,11 +1,14 @@
+/**
+ * 手动写优化器，训练器
+ */ 
 const tf = require('@tensorflow/tfjs-node');
 
-function linearFunc(size) {
+function linearFunc(size, noRandom) {
   const k = 5;
-  const b = 5;
+  const b = 10;
 
-  const fx = (x) => x * k + b + Math.random() * 2;
-
+  const fx = (x) => x * k + b;
+  
   let i = 0;
   const x = [];
   const y = [];
@@ -22,84 +25,72 @@ function linearFunc(size) {
 }
 
 
+
 function getModel() {
 
-  // const inputs = tf.input({
-  //   shape: [1],
-  // });
+  const a = tf.variable(tf.scalar(Math.random() * 5));
+  const b = tf.variable(tf.scalar(Math.random() * 5));
+  const c = tf.variable(tf.scalar(Math.random()));
+  const d = tf.variable(tf.scalar(Math.random()));
 
-  // const outputs = tf.layers.dense({
-  //   units: 1,
-  // }).apply(inputs);
-
-  // const model = tf.model({
-  //   inputs,
-  //   outputs,
-  // });
-
-  const model = tf.sequential();
-  model.add(tf.layers.dense({
-    inputShape: [1],
-    units: 1,
-  }));
-
-  const loss = (prediction, actualValue, ...args) => {
-    // console.log('>>>>loss start', args);
-    // prediction.print();
-    // actualValue.print();
-    // console.log('<<<<loss end');
-    return (prediction.sub(actualValue));
+  function predict(x) {
+    return tf.tidy(() => {
+      return a.mul(x).add(b);
+    });
   };
-  // Choose an optimizer, loss function and accuracy metric,
-  // then compile and return the model
-  const optimizer = tf.train.sgd(0.01);
-  model.compile({
-    optimizer: optimizer,
-    loss, //: 'meanAbsoluteError',
-  });
+  async function fit(inputsX, testsY, { loss }) {
+    let i = 0;
+    const trainSize = 10 || inputsX.size;
 
-  return model;
+    const learningRate = 0.05;
+    const optimizer = tf.train.sgd(learningRate);
+
+    while (i < trainSize) {
+      optimizer.minimize(() => {
+        const pred = predict(inputsX);
+        const realY = testsY
+        
+        pred.print();
+        realY.print();
+        console.log(`======= ${pred.size}, ${realY.size}`);
+
+        return loss(pred, realY);
+      });
+      i++;
+    }
+  }
+
+  return {
+    parameters: [a, b, c, d],
+    predict,
+    fit,
+  };
 }
 
 async function train(model) {
 
-  const trainSize = 500;
-  const BATCH_SIZE = Math.floor(trainSize/3);
+  const trainSize = 100;
 
   const [trainXs, trainYs] = tf.tidy(() => {
     const { x, y } = linearFunc(trainSize);
 
     return [
-      tf.tensor1d(x),
-      tf.tensor1d(y),
-    ];
+      x,
+      y,
+    ].map(v => tf.tensor1d(v));
   });
 
-  const [testXs, testYs] = tf.tidy(() => {
-    const { x, y } = linearFunc(trainSize);
 
-    return [
-      tf.tensor1d(x),
-      tf.tensor1d(y),
-    ];
-  });
+  const loss = (prediction, actualValue) => {
+    return prediction.sub(actualValue).square().mean();
+  };
 
-  trainXs.print();
-  trainYs.print();
-  testXs.print();
-  testYs.print();
 
   return model.fit(trainXs, trainYs, {
-    batchSize: BATCH_SIZE,
-    validationData: [testXs, testYs],
-    epochs: 10,
-    callbacks: {
-      onTrainBegin (...args) {
-        console.log('[fit callbacks] onTrainBegin', args);
-      },
-    },
+    loss,
   });
 }
+
 
 
 function doPrediction(model, x) {
@@ -113,9 +104,13 @@ function doPrediction(model, x) {
   preds.print();
 }
 
-async function run () {
+async function run() {
   const model = getModel();
   await train(model);
+
+  console.log('--- 训练结果 ---')
+
+  model.parameters.map(tensor => tensor.print());
 
   doPrediction(model, 1);
   doPrediction(model, 2);
