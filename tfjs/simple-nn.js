@@ -10,8 +10,9 @@ function linearFunc(size) {
   const x = [];
   const y = [];
   while (i < size) {
-    x.push(i);
-    y.push(fx(i));
+    const smallX = Math.random();
+    x.push(smallX);
+    y.push(fx(smallX));
     i++;
   }
 
@@ -39,7 +40,7 @@ function getModel() {
   };
   // Choose an optimizer, loss function and accuracy metric,
   // then compile and return the model
-  const optimizer = tf.train.sgd(0.0001);
+  const optimizer = tf.train.sgd(0.5);
   model.compile({
     optimizer: optimizer,
     // loss: 'meanAbsoluteError',
@@ -108,8 +109,6 @@ async function run () {
 
   doPrediction(model, 1);
   doPrediction(model, 2);
-
-  console.log(linearFunc(3))
 }
 
 run();

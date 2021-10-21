@@ -12,15 +12,17 @@ exports.generateData = function generateData(num, coeff, sigma = 0.04) {
       .add(b.mul(x.square()))
       .add(c.mul(x))
       .add(d)
-      .add(tf.randomNormal([num], 0, sigma));
 
     const ymin = y.min();
     const ymax = y.max();
     const yrange = ymax.sub(ymin);
     const yNormalized = y.sub(ymin).div(yrange);
+    console.log('y?')
+    yrange.print();
 
     return {
       x,
+      y,
       yNormalized
     };
   })

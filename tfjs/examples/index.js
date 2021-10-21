@@ -42,11 +42,17 @@ async function main() {
     c: .9,
     d: .5
   };
-  const trainingData = generateData(100, trueCoefficients);
+  const trainingData = generateData(10, trueCoefficients);
+  console.log('----- training data -----')
+  trainingData.x.print();
+  trainingData.yNormalized.print();
 
   train(trainingData.x, trainingData.yNormalized);
 
+  
   [a,b,c,d].map(v => v.print());
+
+
 }
 
 main();

@@ -13,8 +13,9 @@ function linearFunc(size, noRandom) {
   const x = [];
   const y = [];
   while (i < size) {
-    x.push(i);
-    y.push(fx(i));
+    const smallX = Math.random();
+    x.push(smallX);
+    y.push(fx(smallX));
     i++;
   }
 
@@ -28,10 +29,8 @@ function linearFunc(size, noRandom) {
 
 function getModel() {
 
-  const a = tf.variable(tf.scalar(Math.random() * 5));
-  const b = tf.variable(tf.scalar(Math.random() * 5));
-  const c = tf.variable(tf.scalar(Math.random()));
-  const d = tf.variable(tf.scalar(Math.random()));
+  const a = tf.variable(tf.scalar(Math.random()));
+  const b = tf.variable(tf.scalar(Math.random()));
 
   function predict(x) {
     return tf.tidy(() => {
@@ -40,9 +39,9 @@ function getModel() {
   };
   async function fit(inputsX, testsY, { loss }) {
     let i = 0;
-    const trainSize = 10 || inputsX.size;
+    const trainSize = 100 || inputsX.size;
 
-    const learningRate = 0.05;
+    const learningRate = 0.5;
     const optimizer = tf.train.sgd(learningRate);
 
     while (i < trainSize) {
@@ -61,7 +60,7 @@ function getModel() {
   }
 
   return {
-    parameters: [a, b, c, d],
+    parameters: [a, b],
     predict,
     fit,
   };
@@ -108,7 +107,7 @@ async function run() {
   const model = getModel();
   await train(model);
 
-  console.log('--- 训练结果 ---')
+  console.log('--- 训练结果 k,b ---')
 
   model.parameters.map(tensor => tensor.print());
 
