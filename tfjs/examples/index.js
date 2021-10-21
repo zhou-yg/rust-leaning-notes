@@ -37,8 +37,8 @@ function train(xs, ys, numIterations = 75) {
 
 async function main() {
   const trueCoefficients = {
-    a: 1,
-    b: 2,
+    a: 0.5,
+    b: 0.8,
     c: .9,
     d: .5
   };
@@ -49,4 +49,4 @@ async function main() {
   [a,b,c,d].map(v => v.print());
 }
 
-main();a
+main();
