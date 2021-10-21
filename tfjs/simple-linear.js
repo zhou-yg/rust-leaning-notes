@@ -5,17 +5,19 @@ const tf = require('@tensorflow/tfjs-node');
 
 function linearFunc(size, noRandom) {
   const k = 5;
-  const b = 10;
+  const b = -10;
 
-  const fx = (x) => x * k + b;
+  const fx = (x) => x * k + (b + Math.random() * 2);
   
   let i = 0;
   const x = [];
   const y = [];
   while (i < size) {
-    const smallX = Math.random();
-    x.push(smallX);
-    y.push(fx(smallX));
+    // const smallX = Math.random();
+    // x.push(smallX);
+    // y.push(fx(smallX));
+    x.push(i);
+    y.push(fx(i));
     i++;
   }
 
@@ -34,28 +36,28 @@ function getModel() {
 
   function predict(x) {
     return tf.tidy(() => {
-      return a.mul(x).add(b);
+      return x.mul(a).add(b);
     });
   };
   async function fit(inputsX, testsY, { loss }) {
     let i = 0;
     const trainSize = 100 || inputsX.size;
 
-    const learningRate = 0.5;
+    const learningRate = 0.5e-4;
     const optimizer = tf.train.sgd(learningRate);
-
+    // const optimizer = tf.train.adam();
+    
     while (i < trainSize) {
       optimizer.minimize(() => {
         const pred = predict(inputsX);
-        const realY = testsY
-        
-        pred.print();
-        realY.print();
-        console.log(`======= ${pred.size}, ${realY.size}`);
+        const realY = testsY        
 
         return loss(pred, realY);
       });
       i++;
+      console.log('--- a,b ---');
+      a.print();
+      b.print();
     }
   }
 

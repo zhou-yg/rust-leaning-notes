@@ -13,6 +13,8 @@ function linearFunc(size) {
     const smallX = Math.random();
     x.push(smallX);
     y.push(fx(smallX));
+    // x.push(i);
+    // y.push(fx(i));
     i++;
   }
 
@@ -29,18 +31,17 @@ function getModel() {
   model.add(tf.layers.dense({
     inputShape: [1],
     units: 1,
+    useBias: true,
+  }));
+  model.add(tf.layers.dense({
+    units: 1,
+    useBias: true,
   }));
 
-  const loss = (prediction, actualValue, ...args) => {
-    // console.log('>>>>loss start', args);
-    prediction.print();
-    actualValue.print();
-    // console.log('<<<<loss end');
-    return (prediction.sub(actualValue));
-  };
+
   // Choose an optimizer, loss function and accuracy metric,
   // then compile and return the model
-  const optimizer = tf.train.sgd(0.5);
+  const optimizer = tf.train.sgd(5e-2);
   model.compile({
     optimizer: optimizer,
     // loss: 'meanAbsoluteError',
@@ -54,7 +55,7 @@ function getModel() {
 async function train(model) {
 
   const trainSize = 100;
-  const BATCH_SIZE = Math.floor(trainSize/3);
+  const BATCH_SIZE = Math.floor(trainSize/10);
 
   const [trainXs, trainYs] = tf.tidy(() => {
     const { x, y } = linearFunc(trainSize);
@@ -82,7 +83,7 @@ async function train(model) {
   return model.fit(trainXs, trainYs, {
     batchSize: BATCH_SIZE,
     validationData: [testXs, testYs],
-    epochs: 10,
+    epochs: 20,
     callbacks: {
       onTrainBegin (...args) {
         console.log('[fit callbacks] onTrainBegin', args);
@@ -93,13 +94,11 @@ async function train(model) {
 
 
 function doPrediction(model, x) {
-  const testX = tf.tensor1d([x]);
+  const testX = tf.tensor([x]);
 
   const preds = model.predict(testX);
 
-  testX.dispose();
-
-  console.log('----- check doPrediction -------')
+  console.log('----- check doPrediction -------');
   preds.print();
 }
 
