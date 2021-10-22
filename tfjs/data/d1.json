@@ -1,0 +1,644 @@
+{
+  "success": true,
+  "trace": "645312db1634909250320101327924",
+  "data": {
+    "@alipay/morpho-image-hotzone": {
+      "ORIGIN_DEP_TYPE": {
+        "value": "react,@alipay/morpho-box",
+        "valueNum": 2
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/3c76f359-2907-4c46-90a2-28b1f2000b50/_alipay/morpho-image-hotzone_0.1.7",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "2",
+        "valueNum": 2
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "",
+        "valueNum": 1
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "2",
+        "valueNum": 2
+      },
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "737",
+        "valueNum": 737
+      }
+    },
+    "@alipay/morpho-video": {
+      "ORIGIN_DEP_TYPE": {
+        "value": "react",
+        "valueNum": 1
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/93ada3bf-11f1-42bd-a4e0-a3785cfa577d/_alipay/morpho-video_0.1.6",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "2",
+        "valueNum": 2
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "3",
+        "valueNum": 3
+      },
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "",
+        "valueNum": 1
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "545",
+        "valueNum": 545
+      }
+    },
+    "@alipay/morpho-image-react": {
+      "ORIGIN_DEP_TYPE": {
+        "value": "react,@alipay/promo-image-react,@alipay/ap-util/lib/gotoURL",
+        "valueNum": 3
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/4a5e766b-359f-4ef6-ba50-243c8b94137a/_alipay/morpho-image-react_0.2.0",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "2",
+        "valueNum": 2
+      },
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "",
+        "valueNum": 1
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "110",
+        "valueNum": 110
+      },
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "3",
+        "valueNum": 3
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "899",
+        "valueNum": 899
+      }
+    },
+    "@alipay/hbj-detail-list": {
+      "ORIGIN_DEP_TYPE": {
+        "value": "react,date-fns,@alipay/dp-page-result-react,@alipay/antd-mobile,@alipay/hbj-main-account/src/service",
+        "valueNum": 5
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/35d13f66-f144-492a-9d87-f51a5581069d/_alipay/hbj-detail-list_1.1.1",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "3",
+        "valueNum": 3
+      },
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "",
+        "valueNum": 1
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "2395",
+        "valueNum": 2395
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "13415",
+        "valueNum": 13415
+      }
+    },
+    "@alipay/hbj-main-account": {
+      "ORIGIN_SCORE_TYPE": {
+        "value": "4",
+        "valueNum": 4
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "12",
+        "valueNum": 12
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "202014",
+        "valueNum": 202014
+      },
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "com.alipay.pcreditbfweb.huabeijinNew.index.queryDetailByScene",
+        "valueNum": 1
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "34644",
+        "valueNum": 34644
+      }
+    },
+    "@alipay/hbj-use-ab-floor": {
+      "ORIGIN_DEP_TYPE": {
+        "value": "@alipay/xmas-fetch,@alipay/xmas-fetch/lib/core,@alipay/xmas-fetch/lib/middleware,react,@alipay/webview-titlebar-fix,@alipay/normal-floor-header,lodash/debounce,@alipay/signalike,@alipay/dp-sign-huabei-react/src/index,react-dom",
+        "valueNum": 10
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/0073fe99-e5d1-4581-97fe-ab5fcaf9c5a5/_alipay/hbj-use-ab-floor_1.0.4",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "3",
+        "valueNum": 3
+      },
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "com.alipay.pcreditbfweb.huabeijinNew.index.queryRepayBillStatus,com.alipay.pcreditbfweb.huabeijinNew.index.queryDetailByScene",
+        "valueNum": 2
+      },
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "3",
+        "valueNum": 3
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "886",
+        "valueNum": 886
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "10375",
+        "valueNum": 10375
+      }
+    },
+    "@alipay/sc-zelda-cpt-react": {
+      "ORIGIN_DEP_TYPE": {
+        "value": "react,@alipay/reactivejs,lodash/isFunction",
+        "valueNum": 3
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/56ceced3-7bf3-41a4-8ff4-23309a842cd5/_alipay/sc-zelda-cpt-react_0.1.10",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "1",
+        "valueNum": 1
+      },
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "",
+        "valueNum": 1
+      },
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "3",
+        "valueNum": 3
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "450",
+        "valueNum": 450
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "3152",
+        "valueNum": 3152
+      }
+    },
+    "@alipay/suc-debugger": {
+      "ORIGIN_DEP_TYPE": {
+        "value": "react,@alipay/signalike",
+        "valueNum": 2
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "3",
+        "valueNum": 3
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "",
+        "valueNum": 1
+      },
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "1158",
+        "valueNum": 1158
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/79168c0b-c827-42ef-814b-84ad36379d7e/_alipay/suc-debugger_0.1.4",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "1",
+        "valueNum": 1
+      }
+    },
+    "@alipay/suc-logic-equal": {
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "",
+        "valueNum": 1
+      },
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "4",
+        "valueNum": 4
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_DEP_TYPE": {
+        "value": "react,@alipay/signalike,@alipay/signalike-react",
+        "valueNum": 3
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "926",
+        "valueNum": 926
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/8ec27e05-11ac-4fdc-b9fe-29f405ae5186/_alipay/suc-logic-equal_1.0.1",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "1",
+        "valueNum": 1
+      }
+    },
+    "@alipay/suc-adv-jsapi-alert": {
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "",
+        "valueNum": 1
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "6",
+        "valueNum": 6
+      },
+      "ORIGIN_DEP_TYPE": {
+        "value": "react,@alipay/signalike",
+        "valueNum": 2
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "770",
+        "valueNum": 770
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/d6cdac78-4a1e-4467-a431-0e844fcc2e7f/_alipay/suc-adv-jsapi-alert_1.0.1",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "1",
+        "valueNum": 1
+      }
+    },
+    "@alipay/suc-base-counter": {
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "5",
+        "valueNum": 5
+      },
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "",
+        "valueNum": 1
+      },
+      "ORIGIN_DEP_TYPE": {
+        "value": "react,@alipay/signalike",
+        "valueNum": 2
+      },
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "1054",
+        "valueNum": 1054
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/e6eb39ac-a544-4df4-aab9-7d0632fb1772/_alipay/suc-base-counter_0.1.2",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "1",
+        "valueNum": 1
+      }
+    },
+    "@alipay/test-peiqi2": {
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "1",
+        "valueNum": 1
+      },
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "",
+        "valueNum": 1
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "4",
+        "valueNum": 4
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "578",
+        "valueNum": 578
+      },
+      "ORIGIN_DEP_TYPE": {
+        "value": "react",
+        "valueNum": 1
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "889",
+        "valueNum": 889
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/5da34bf0-6043-455c-8874-e169b7d51277/_alipay/test-peiqi2_1.0.1",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "1",
+        "valueNum": 1
+      }
+    },
+    "@alipay/floor-anchor": {
+      "ORIGIN_DEP_TYPE": {
+        "value": "react,@alipay/webview-titlebar-fix,@alipay/signalike",
+        "valueNum": 3
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "578",
+        "valueNum": 578
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "2",
+        "valueNum": 2
+      },
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "",
+        "valueNum": 1
+      },
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "1721",
+        "valueNum": 1721
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/76f19d47-96aa-4f13-bb22-f5ba1e53e87c/_alipay/floor-anchor_1.0.0",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "1",
+        "valueNum": 1
+      }
+    },
+    "@alipay/hb-index-catering-floor": {
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "1",
+        "valueNum": 1
+      },
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "",
+        "valueNum": 1
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "3",
+        "valueNum": 3
+      },
+      "ORIGIN_DEP_TYPE": {
+        "value": "react,@alipay/hb-topic-content-card",
+        "valueNum": 2
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "2852",
+        "valueNum": 2852
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "13771",
+        "valueNum": 13771
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/e361fde2-c2e3-41e0-8f59-a4fdea0f529d/_alipay/hb-index-catering-floor_1.0.8",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "4",
+        "valueNum": 4
+      }
+    },
+    "@alipay/hb-smart-unsign-2021": {
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "",
+        "valueNum": 1
+      },
+      "ORIGIN_DEP_TYPE": {
+        "value": "react,@alipay/antd-mobile,lodash,date-fns",
+        "valueNum": 4
+      },
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "3176",
+        "valueNum": 3176
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "1",
+        "valueNum": 1
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "16315",
+        "valueNum": 16315
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/37582020-5bd7-49bc-ac78-5e27d8571a5a/_alipay/hb-smart-unsign-2021_1.0.2",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "4",
+        "valueNum": 4
+      }
+    },
+    "@alipay/peiqi-dev-placeholder": {
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "",
+        "valueNum": 1
+      },
+      "ORIGIN_DEP_TYPE": {
+        "value": "react,react-dom,@alipay/lenny-render",
+        "valueNum": 3
+      },
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "578",
+        "valueNum": 578
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "5",
+        "valueNum": 5
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "2659",
+        "valueNum": 2659
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/cafc4ffe-3839-4f10-aa36-ed10d42917cd/_alipay/peiqi-dev-placeholder_1.1.0",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "3",
+        "valueNum": 3
+      }
+    },
+    "@alipay/hbj3-task-main": {
+      "ORIGIN_DEP_TYPE": {
+        "value": "@alipay/hbj-task-item,react,@alipay/dp-page-result-react,lodash/get,@alipay/signalike,@alipay/normal-floor-header",
+        "valueNum": 6
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "7",
+        "valueNum": 7
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "861",
+        "valueNum": 861
+      },
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "",
+        "valueNum": 1
+      },
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "1",
+        "valueNum": 1
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "8360",
+        "valueNum": 8360
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/1e442866-45c9-40e8-98a6-b905cb7cacb4/_alipay/hbj3-task-main_1.1.0",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "4",
+        "valueNum": 4
+      }
+    },
+    "@alipay/dp-button-action-react": {
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "com.alipay.pcreditsffweb.record.query,com.alipay.pcreditsffweb.record.subscribe,com.alipay.pcreditsffweb.record.unsubscribe",
+        "valueNum": 3
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "21",
+        "valueNum": 21
+      },
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "44",
+        "valueNum": 44
+      },
+      "ORIGIN_DEP_TYPE": {
+        "value": "anima-querystring,react,@alipay/dp-anyshare-react,@alipay/morpho-box,@alipay/ap-util/lib/customEvent,@alipay/huabei-activity-util,@alipay/signalike,lodash/get",
+        "valueNum": 8
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "15169",
+        "valueNum": 15169
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/2e33d923-a2c4-429d-b38a-fe4a04bda21a/_alipay/dp-button-action-react_1.0.5",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "3",
+        "valueNum": 3
+      }
+    },
+    "@alipay/hbj-product-list": {
+      "ORIGIN_RPC_LENGTH_TYPE": {
+        "value": "com.alipay.pcreditbfweb.huabeijin.mall.index,com.alipay.pcreditbfweb.huabeijin.mall.queryProducts,com.alipay.pcreditbfweb.huabeijin.mall.queryUserActivityPrizeList",
+        "valueNum": 3
+      },
+      "ORIGIN_SCHEMA_KEYS_TYPE": {
+        "value": "6",
+        "valueNum": 6
+      },
+      "ORIGIN_ROCOCO_MARK_TYPE": {
+        "value": "0",
+        "valueNum": 0
+      },
+      "ORIGIN_CSS_LENGTH_TYPE": {
+        "value": "10930",
+        "valueNum": 10930
+      },
+      "ORIGIN_DEP_TYPE": {
+        "value": "react,lodash/debounce,@alipay/webview-titlebar-fix,antd/lib/typography,@alipay/hbj-countdown,@alipay/xmas-fetch,query-string,date-fns,@alipay/normal-floor-header,@alipay/dp-page-result-react,@alipay/rewardMask",
+        "valueNum": 11
+      },
+      "ORIGIN_SRC_LENGTH_TYPE": {
+        "value": "47322",
+        "valueNum": 47322
+      },
+      "ORIGIN_SRC_TYPE": {
+        "value": "https://gw.alipayobjects.com/os/loanprod/77cb5122-7fdd-4046-a24b-7041c103836d/_alipay/hbj-product-list_1.1.6",
+        "valueNum": 1
+      },
+      "ORIGIN_SCORE_TYPE": {
+        "value": "4",
+        "valueNum": 4
+      }
+    }
+  }
+}
