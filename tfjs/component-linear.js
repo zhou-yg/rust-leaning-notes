@@ -112,7 +112,7 @@ function getModel() {
     metrics: ['accuracy'],
   });
 
-  return model;
+  return model;m
 }
 
 async function train(model, data, testData) {
@@ -140,17 +140,24 @@ async function train(model, data, testData) {
 const data1 = transData(d1);
 const data2 = transData(d2);
 const model = getModel();
-train(model, data1, data2).then(() => {
+train(model, data1, data2).then(async () => {
   const data3 = transData(d3);
-  const checkX = tf.tensor(data3.xInputs);
-  const checkY = tf.tensor1d(data3.yInputs);
+  const checkX = tf.tensor(data3.xInputs.slice(1));
+  const checkY = tf.tensor1d(data3.yInputs.slice(1));
 
   console.log('train end 开始预测 -->');
 
   const pred = model.predict(checkX);
 
+  const r = await model.save('file://./my-model');
+
+  console.log(r);
+
   pred.print();
 
+  const p1 = await pred.argMax(-1).array();
+
+  console.log(p1);
   checkY.print();
 });
 
